@@ -82,7 +82,7 @@
             $('.imageArea > .img'+index).removeClass('imgNone');
         }
         const setData = () => {
-            $('.data2Value').text(': ' + (pData[randomArray[index]].xai > 0 ? 'AD' : 'HP') + ' (Confidence '+pData[randomArray[index]].xai+')');
+            $('.data2Value').text(': ' + (pData[randomArray[index]].xai > 0 ? 'AD' : 'HP') + ' (Confidence '+Math.abs(pData[randomArray[index]].xai)+')');
         }
         const setGauge = () => {
             let key = ['texture', 'vessel', 'color'];
